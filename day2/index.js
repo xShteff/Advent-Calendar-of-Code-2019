@@ -1,5 +1,3 @@
-module.exports = () => {
-  const inputData = require('./input');
+const inputData = require('./input');
 
-  console.log(inputData);
-};
+console.log(inputData);
