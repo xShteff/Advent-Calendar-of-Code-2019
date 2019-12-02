@@ -42,10 +42,8 @@ function handleIntcode(data, index) {
   }
   return 1;
 }
-// let inputData = [1, 1, 1, 4, 99, 5, 6, 0, 99];
-console.log('BEFORE: ');
-printIntcodeFancy(inputData);
-printIntcodeInline(inputData);
+// console.log('BEFORE: ');
+// printIntcodeFancy(inputData);
 let index = 0;
 
 while (index < inputData.length - 4) {
@@ -58,8 +56,6 @@ while (index < inputData.length - 4) {
       break;
   }
 }
-console.log('AFTER: ');
-
-printIntcodeFancy(inputData);
-printIntcodeInline(inputData);
-console.log(inputData[0]);
+// console.log('AFTER: ');
+// printIntcodeFancy(inputData);
+console.log(`The answer for part 1 is: ${inputData[0]}`);
