@@ -1,4 +1,6 @@
 const inputData = require('./input');
+inputData[1] = 12;
+inputData[2] = 2;
 
 function printIntcodeFancy(data) {
   let index = 0;
