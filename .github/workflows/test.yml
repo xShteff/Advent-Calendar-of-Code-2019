@@ -1,0 +1,18 @@
+name: Run Exercises
+
+on:
+  push:
+    paths: 
+      - '**.js'
+      - '**.json'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: test
+      run: |
+        npm start
+      env:
+        CI: true
