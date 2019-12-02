@@ -1,5 +1,5 @@
 module.exports = () => {
-  const inputData = require("./input");
+  const inputData = require('./input');
 
   function calculateFuel(val) {
     return Math.floor(val / 3 - 2);
@@ -25,6 +25,6 @@ module.exports = () => {
     return fuelSum;
   });
   console.log(
-    `Total amount fuel required (p2): ${p2Data.reduce((a, b) => a + b)}`
+    `Total amount fuel required (p2): ${p2Data.reduce((a, b) => a + b)}`,
   );
 };
