@@ -1,10 +1,10 @@
-var inputData = require("./input");
+const inputData = require("./input");
 
 function calculateFuel(val) {
   return Math.floor(val / 3 - 2);
 }
 
-let totalFuel =
+const totalFuel =
   inputData.reduce((a, b) => {
     return a + calculateFuel(b);
   }) -
@@ -13,7 +13,7 @@ let totalFuel =
 
 console.log(`The amount of fuel required is: ${totalFuel}`);
 
-let p2Data = inputData.map((val, index) => {
+const p2Data = inputData.map((val, index) => {
   let fuelIncrement = calculateFuel(val);
   let fuelSum = 0;
   while (fuelIncrement > 0) {
