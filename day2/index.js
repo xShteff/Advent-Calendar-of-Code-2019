@@ -15,5 +15,7 @@ while (index < inputData.length - 4) {
       break;
   }
 }
+console.log('Final Intcode:');
+utils.printIntcodeFancy(inputData);
 
 console.log(`Answer for part 1 is: ${inputData[0]}`);
