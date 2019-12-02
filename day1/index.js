@@ -15,12 +15,10 @@ console.log(`The amount of fuel required is: ${totalFuel}`);
 
 let p2Data = inputData.map((val, index) => {
   let fuelIncrement = calculateFuel(val);
-  let fuelSum = fuelIncrement;
+  let fuelSum = 0;
   while (fuelIncrement > 0) {
+    fuelSum += fuelIncrement;
     fuelIncrement = calculateFuel(fuelIncrement);
-    if (fuelIncrement > 0) {
-      fuelSum += fuelIncrement;
-    }
   }
   return fuelSum;
 });
