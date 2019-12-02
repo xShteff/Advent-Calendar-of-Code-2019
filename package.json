@@ -1,8 +1,7 @@
 {
   "name": "advent-calendar-of-code-2019",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Exercises for 2019's Advent Calendar of Code",
   "scripts": {
     "start": "node index.js"
   },
@@ -10,11 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/alstol/Advent-Calendar-of-Code-2019.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alstol/Advent-Calendar-of-Code-2019/issues"
-  },
+  "author": "Alin Stefan Olaru",
   "homepage": "https://github.com/alstol/Advent-Calendar-of-Code-2019#readme",
   "devDependencies": {
     "eslint": "^6.7.2"

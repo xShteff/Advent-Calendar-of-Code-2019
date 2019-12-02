@@ -14,7 +14,7 @@ module.exports = () => {
 
   console.log(`The amount of fuel required is: ${totalFuel}`);
 
-  const p2Data = inputData.map((val, index) => {
+  const p2Data = inputData.map(val => {
     let fuelIncrement = calculateFuel(val);
     let fuelSum = 0;
     while (fuelIncrement > 0) {
