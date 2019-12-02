@@ -11,7 +11,7 @@ const totalFuel =
   inputData[0] +
   calculateFuel(inputData[0]); // Botching this in for now
 
-console.log(`The amount of fuel required is: ${totalFuel}`);
+console.log(`Answer for part 1 is: ${totalFuel}`);
 
 const p2Data = inputData.map(val => {
   let fuelIncrement = calculateFuel(val);
@@ -23,6 +23,4 @@ const p2Data = inputData.map(val => {
 
   return fuelSum;
 });
-console.log(
-  `Total amount fuel required (p2): ${p2Data.reduce((a, b) => a + b)}`,
-);
+console.log(`Answer for part 2 is: ${p2Data.reduce((a, b) => a + b)}`);
