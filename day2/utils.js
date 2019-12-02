@@ -22,4 +22,19 @@ module.exports = {
     }
     console.log(line);
   },
+  handleIntcode(data, index) {
+    switch (data[index]) {
+      case 1:
+        data[data[index + 3]] = data[data[index + 1]] + data[data[index + 2]];
+        break;
+      case 2:
+        data[data[index + 3]] = data[data[index + 1]] * data[data[index + 2]];
+        break;
+      case 99:
+        return 0;
+      default:
+        return -1;
+    }
+    return 1;
+  },
 };
