@@ -2,5 +2,6 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.rulers": [100],
   "editor.formatOnSave": true,
-  "stylelint.autoFixOnSave": true
+  "stylelint.autoFixOnSave": true,
+  "cSpell.words": ["Intcode"]
 }
