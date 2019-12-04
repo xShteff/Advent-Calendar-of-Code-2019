@@ -8,7 +8,7 @@ const utils = require('./utils');
 let count = 0;
 for (let i = input.min; i <= input.max; i++) {
   if (utils.checkForDouble(i)) {
-    if (util.checkIncreasedVal(i)) {
+    if (utils.checkIncreasedVal(i)) {
       count++;
     }
   }
